@@ -1,0 +1,44 @@
+header, footer{
+  background-color: lightblue;
+  text-align: center;
+}
+
+body{
+  background-image: url("../images/groceries_blue.png");
+}
+
+#box-container1 {
+  /*background-image: url("../images/groceries.png"); */
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  .Products {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+
+  #box-container2{
+    background-color: lightgray;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .responsive {
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 200px;
+  }

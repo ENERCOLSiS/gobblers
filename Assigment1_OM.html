@@ -1,0 +1,97 @@
+<!-- Assigment1 PROG8020 Web Dev.& Design
+Start Date: 18_09_2022
+Last Update: 21_09_2022 
+Author: Orlando Morales
+Professor: Davneet Chawla
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Kiosk</title>
+    <!-- Website Logo in Title -->
+    <link rel = "icon" href = "images/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- Loading counting Script -->
+    <script src="js/counting.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mini Kiosk</h1>
+    </header>
+    
+    <fieldset id="box-container1">
+        <legend>Products</legend>
+
+        <div class="Products" id="item1">
+            <h2>Pringles</h2>
+            <h3>Price = $3 each</h3>
+            <img src="images/Productos/pringles.png" alt="Pringles Can" class="responsive">
+            <div>
+                <button id="p1" onclick="addQuantity(this.id, 'out1')">ADD</button>
+                <p> Quantity = <span id="out1"> 0 </span> </p>
+            </div>
+        </div>
+
+        <div class="Products" id="item2">
+            <h2>Peanuts</h2>
+            <h3>Price = $12 each</h3>
+            <img src="images/Productos/peanuts.png" alt="Bag of Peanuts" class="responsive">
+            <div>
+                <button id="p2" onclick="addQuantity(this.id, 'out2')">ADD</button>
+                <p> Quantity = <span id="out2"> 0 </span> </p>
+            </div>
+        </div>
+
+        <div class="Products" id="item3">
+            <h2>Halls</h2>
+            <h3>Price = $3.5 each</h3>
+            <img src="images/Productos/halls.png" alt="Halls Candy Bar" class="responsive">
+            <div>
+                <button id="p3" onclick="addQuantity(this.id, 'out3')">ADD</button>
+                <p> Quantity = <span id="out3"> 0 </span> </p>
+            </div>
+        </div>
+         
+        <div class="Products" id="item4">
+            <h2>Soda</h2>
+            <h3>Price = $2.5 each</h3>
+            <img src="images/Productos/soda.png" alt="Sodas Cans" class="responsive">
+            <div>
+                <button id="p4" onclick="addQuantity(this.id, 'out4')">ADD</button>
+                <p> Quantity = <span id="out4"> 0 </span> </p>
+            </div>
+        </div>
+        
+        <div class="Products" id="item5">
+            <h2>Coffee</h2>
+            <h3>Price = $8 each</h3>
+            <img src="images/Productos/coffee.png" alt="Cofee beans and wood spoon" class="responsive">
+            <div>
+                <button id="p5" onclick="addQuantity(this.id, 'out5')">ADD</button>
+                <p> Quantity = <span id="out5"> 0 </span> </p>
+            </div>
+        </div>
+    </fieldset>
+        
+    <fieldset id="box-container2">
+        <legend>Order Summary</legend>
+        <p id="txt1"></p>
+        <p id="txt2"></p>
+        <p id="txt3"></p>
+        <p id="txt4"></p>
+        <p id="txt5"></p><hr>
+        <p id="subTotal"></p>
+        <p id="taxes"></p>
+        <p id="ship"></p>
+        <p > <strong id="total"></strong> </p>
+
+        <button onclick="checkOut()" type="button">CHECK OUT!</button>
+    </fieldset>
+    <footer>
+        <p>Created by: <cite> &#169; Orlando Morales </cite></p>
+    </footer>
+</body>
+</html>
